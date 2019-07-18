@@ -72,7 +72,7 @@ The GOV.UK PaaS provides resources to tenants through a series of [Cloud Foundry
 <div style="height:1px;font-size:1px;">&nbsp;</div>
 
 |name                   |total memory|routes|service-instances|
-|-----------------------|------------|------|-----------------|
+|:-----------------------|:------------|:------|:-----------------|
 |default (no paid plans)|5Gb         |1000  |10 |
 |small                  |10Gb        |1000  |10 |
 |medium                 |60Gb        |1000  |20 |
@@ -91,13 +91,15 @@ The GOV.UK PaaS provides a number of highly available backing services.
 <div style="height:1px;font-size:1px;">&nbsp;</div>
 
 | Service     | Description    | Version       | Plans|
-|-------------|-------------|-------------|-------------|
+|:-------------|:-------------|:-------------|:-------------|
 | CDN-Route | Proxy traffic from a domain that the user controls to an existing Cloud Foundry application or external URL| - | - |
-| Elasticsearch |A search engine based on Lucene. It provides a distributed, multitenant capable full-text search engine with an HTTP web interface and schema-free JSON documents. | 6.x| tiny (80Gb) small (240Gb) medium (525Gb) large (1,050Gb) |
-| MySQL |A relational database management system |5.7 | tiny (5Gb) small (20Gb) medium (100Gb) large (512Gb) xlarge (2Tb)|
+| Elasticsearch |A search engine based on Lucene. It provides a distributed, multitenant capable full-text search engine with an HTTP web interface and schema-free JSON documents. | 6.x| tiny (80Gb)<br/> small (240Gb)<br/> medium (525Gb)<br/> large (1,050Gb) |
+| MySQL |A relational database management system |5.7 | tiny (5Gb)<br/> small (20Gb)<br/> medium (100Gb)<br/> large (512Gb)<br/> xlarge (2Tb)|
 | Object Store |Object storage | - | invitation only private beta |
-| PostgreSQL |A relational database management system |9.x + 10 | tiny (5Gb) small (20Gb) medium (100Gb) large (512Gb) xlarge (2Tb) |
-| Redis | A distributed, in-memory key-value database with optional durability. | |tiny (568Mb) medium (6.3Gb) |
+| PostgreSQL |A relational database management system |9.x + 10 | tiny (5Gb)<br/> small (20Gb)<br/> medium (100Gb)<br/> large (512Gb)<br/> xlarge (2Tb) |
+| Redis | A distributed, in-memory key-value database with optional durability. | |tiny (568Mb)<br/> medium (6.3Gb) |
+
+<div style="height:1px;font-size:1px;">&nbsp;</div>
 
 ### Languages
 
@@ -106,20 +108,23 @@ concept of [buildpacks](https://docs.cloudfoundry.org/buildpacks/).
 
 <div style="height:1px;font-size:1px;">&nbsp;</div>
 
-| Buildpack                     |Release Notes|  Description                   |
-|-------------------------------|-------------|--------------------------------|
-| [Binary](https://docs.cloudfoundry.org/buildpacks/binary/index.html) |[release notes](https://github.com/cloudfoundry/binary-buildpack/releases) |Buildpack for running arbitrary binary web applications.  |
-| [Custom](https://docs.cloudfoundry.org/buildpacks/custom.html) | |Bring your own custom buildpacks providing support for arbitrary languages. |
-| [Go](https://docs.cloudfoundry.org/buildpacks/go/index.html)  |[release notes](https://github.com/cloudfoundry/go-buildpack/releases) |Buildpack for golang applications.   |
-| [Java](https://docs.cloudfoundry.org/buildpacks/java/index.html) |[release notes](https://github.com/cloudfoundry/java-buildpack/releases) | Buildpack for Java language applications.  |
-| [Nginx](https://docs.cloudfoundry.org/buildpacks/nginx/index.html)| [release notes](https://github.com/cloudfoundry/nginx-buildpack/releases) |Buildpack for nginx. |
-| [Nodejs](https://docs.cloudfoundry.org/buildpacks/node/index.html)| [release notes](https://github.com/cloudfoundry/nodejs-buildpack/releases)|Buildpack for nodejs javascript applications.  |
-| [PHP](https://docs.cloudfoundry.org/buildpacks/php/index.html)     |[release notes](https://github.com/cloudfoundry/php-buildpack/releases) |Buildpack for PHP applications. |
-| [Python](https://docs.cloudfoundry.org/buildpacks/python/index.html)     | [release notes](https://github.ßcom/cloudfoundry/python-buildpack/releases)|Buildpack for python applications. |
-| [Ruby](https://docs.cloudfoundry.org/buildpacks/ruby/index.html) |[release notes](https://github.com/cloudfoundry/ruby-buildpack/releases) |Buildpack for Ruby applications. |
-| [R](https://docs.cloudfoundry.org/buildpacks/r/index.html)        | [release notes](https://github.com/cloudfoundry/r-buildpack/releases)|Buildpack for R language applications. |
-| [Static](https://docs.cloudfoundry.org/buildpacks/staticfile/index.html) | [release notes](https://github.com/cloudfoundry/staticfile-buildpack/releases)|Buildpack for static web sites. |
-| [.NET Core](https://github.com/cloudfoundry/dotnet-core-buildpack)|[release notes](https://github.com/cloudfoundry/dotnet-core-buildpack/releases)  |Buildpack for Microsoft .NET Core. |
+|Language Buildpack            |Release Notes|  Description                   |
+|:-------------------------------|:-------------|:--------------------------------|
+| [Binary](https://docs.cloudfoundry.org/buildpacks/binary/index.html) | [release notes](https://github.com/cloudfoundry/binary-buildpack/releases) | Buildpack for running arbitrary binary web applications. |
+| [Custom](https://docs.cloudfoundry.org/buildpacks/custom.html) | - | Bring your own custom buildpacks providing support for arbitrary languages. |
+| [Go](https://docs.cloudfoundry.org/buildpacks/go/index.html)  | [release notes](https://github.com/cloudfoundry/go-buildpack/releases) | Buildpack for golang applications.   |
+| [Java](https://docs.cloudfoundry.org/buildpacks/java/index.html) | [release notes](https://github.com/cloudfoundry/java-buildpack/releases) | Buildpack for Java language applications. |
+| [Nginx](https://docs.cloudfoundry.org/buildpacks/nginx/index.html) | [release notes](https://github.com/cloudfoundry/nginx-buildpack/releases) | Buildpack for nginx. |
+| [Nodejs](https://docs.cloudfoundry.org/buildpacks/node/index.html) | [release notes](https://github.com/cloudfoundry/nodejs-buildpack/releases) | Buildpack for nodejs javascript applications. |
+| [PHP](https://docs.cloudfoundry.org/buildpacks/php/index.html) | [release notes](https://github.com/cloudfoundry/php-buildpack/releases) | Buildpack for PHP applications. |
+| [Python](https://docs.cloudfoundry.org/buildpacks/python/index.html) | [release notes](https://github.ßcom/cloudfoundry/python-buildpack/releases) | Buildpack for python applications. |
+| [Ruby](https://docs.cloudfoundry.org/buildpacks/ruby/index.html) | [release notes](https://github.com/cloudfoundry/ruby-buildpack/releases) | Buildpack for Ruby applications. |
+| [R](https://docs.cloudfoundry.org/buildpacks/r/index.html) | [release notes](https://github.com/cloudfoundry/r-buildpack/releases) | Buildpack for R language applications. |
+| [Static](https://docs.cloudfoundry.org/buildpacks/staticfile/index.html) | [release notes](https://github.com/cloudfoundry/staticfile-buildpack/releases) | Buildpack for static web sites. |
+| [.NET Core](https://github.com/cloudfoundry/dotnet-core-buildpack) | [release notes](https://github.com/cloudfoundry/dotnet-core-buildpack/releases) | Buildpack for Microsoft .NET Core. |
+
+<div style="height:1px;font-size:1px;">&nbsp;</div>
+
 
 ### Docker
 
