@@ -70,6 +70,7 @@ s may present public web addresses to the internet or be private.
 The GOV.UK PaaS provides resources to tenants through a series of [Cloud Foundry Quotas](https://docs.cloudfoundry.org/adminguide/quota-plans.html)
 
 <div style="height:1px;font-size:1px;">&nbsp;</div>
+
 |name                   |total memory|routes|service-instances|
 |-----------------------|------------|------|-----------------|
 |default (no paid plans)|5Gb         |1000  |10 |
@@ -88,6 +89,7 @@ In the event your service requires more resource than is available in the larges
 The GOV.UK PaaS provides a number of highly available backing services.
 
 <div style="height:1px;font-size:1px;">&nbsp;</div>
+
 | Service     | Description    | Version       | Plans|
 |-------------|-------------|-------------|-------------|
 | CDN-Route | Proxy traffic from a domain that the user controls to an existing Cloud Foundry application or external URL| - | - |
@@ -103,6 +105,7 @@ The platform supports a variety of programming languages through the
 concept of [buildpacks](https://docs.cloudfoundry.org/buildpacks/).
 
 <div style="height:1px;font-size:1px;">&nbsp;</div>
+
 | Buildpack                     |Release Notes|  Description                   |
 |-------------------------------|-------------|--------------------------------|
 | [Binary](https://docs.cloudfoundry.org/buildpacks/binary/index.html) |[release notes](https://github.com/cloudfoundry/binary-buildpack/releases) |Buildpack for running arbitrary binary web applications.  |
