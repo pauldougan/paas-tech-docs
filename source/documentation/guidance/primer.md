@@ -1,5 +1,5 @@
 
-# GOV.UK Platform as a Service (PaaS) Primer
+# GOV.UK PaaS Primer
 
 > A primer for Architects, Technical Leads and Information Assurance
 
