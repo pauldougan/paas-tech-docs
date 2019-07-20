@@ -11,7 +11,7 @@ GOV.UK PaaS supports the needs of [UK Government Departments](https://www.gov.uk
 
 If your department uses the GOV.UK PaaS, you do not need to procure hosting and manage cloud infrastructure.
 
-GOV.UK PaaS Supports non-Crown organisations, including local authorities through an "invitation only" pilot. (From April 2019 )
+GOV.UK PaaS Supports non-Crown organisations, including local authorities.
 
 The GOV.UK PaaS platform:
 
