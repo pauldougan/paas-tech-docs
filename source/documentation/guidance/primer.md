@@ -1,20 +1,7 @@
 
 # GOV.UK PaaS Primer
 
-> A primer for Architects, Technical Leads and Information Assurance
-
-<!--
-Changes
-
-- 2019-07-17 Incorporate content into technical documentation
-- 2019-06-17 Fix Languages table
-- 2019-06-17 Ensure all links are https
-- 2019-06-16 Convert to markdown so that its under version control and consistent with the rest of our documentation
--->
-
-## Introduction
-
-A high level introduction to GOV.UK Platform as a Service aimed at Architects, Technical Leads and Information Assurance so that they can understand how their service can be hosted on the platform.
+> A primer for Architects, Technical Leads, Security and Information Assurance so they can understand how their service can be hosted on the platform.
 
 ## Essentials
 
