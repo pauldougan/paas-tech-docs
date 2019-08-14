@@ -15,7 +15,7 @@ GOV.UK PaaS Supports non-Crown organisations, including local authorities.
 
 The GOV.UK PaaS platform:
 
--   hosts 33 live services including [DiT Export Opportunities](https://www.great.gov.uk/export-opportunities/), [HMRC Trade Tariffs](https://www.gov.uk/trade-tariff), [BEIS Primary Authority Register](https://primary-authority.beis.gov.uk/), [GOV.UK Notify](https://www.notifications.service.gov.uk/), [Digital Marketplace](https://www.digitalmarketplace.service.gov.uk/)
+-   hosts 37 live services including [DiT Export Opportunities](https://www.great.gov.uk/export-opportunities/), [HMRC Trade Tariffs](https://www.gov.uk/trade-tariff), [BEIS Primary Authority Register](https://primary-authority.beis.gov.uk/), [GOV.UK Notify](https://www.notifications.service.gov.uk/), [Digital Marketplace](https://www.digitalmarketplace.service.gov.uk/)
 -   complies with the [GDPR](https://team-manual.cloud.service.gov.uk/team/tenant_personal_data/)
 -   uses [Amazon Web Services](https://aws.amazon.com/) in multiple availability zones in Dublin and London
 -   is supported by the [GOV.UK PaaS  team](https://www.cloud.service.gov.uk/support)
