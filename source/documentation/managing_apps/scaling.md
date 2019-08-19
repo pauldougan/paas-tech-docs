@@ -1,5 +1,3 @@
-# Managing apps
-
 ## Scaling
 
 You can manually scale your app to meet increasing demand. You can do this by:
@@ -20,7 +18,7 @@ For example, run the following command to set the number of app instances to 5:
 
 ``cf scale APPNAME -i 5``
 
-You can also use the manifest to set the number of instances that will start when you [push the app](/deploying_apps.html#deploying-public-apps]:
+You can also use the manifest to set the number of instances that will start when you [push the app](deploying_apps.html#deploying-public-apps):
 
 ```
 ---
@@ -47,4 +45,3 @@ This command increases the disk space limit for an app to 512 megabytes:
 ### Further information
 
 For more information, refer to the [Cloud Foundry documentation on using `cf scale` to scale an app](http://docs.cloudfoundry.org/devguide/deploy-apps/cf-scale.html) in the Cloud Foundry docs.
-

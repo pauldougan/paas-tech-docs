@@ -1,3 +1,5 @@
+# Managing apps
+
 ## Connecting with SSH
 
 When you deploy an app to GOV.UK PaaS, it runs in a container, which is like a lightweight Linux virtual machine. Each app runs in its own isolated container.
@@ -7,6 +9,10 @@ Sometimes, it can be useful to connect directly to the container with SSH. You w
 If you do run commands which will change the container temporarily, it's a good idea to restart the app afterwards.
 
 SSH is enabled by default. In most cases, you will find that you can SSH directly to your app's container.
+
+<br>
+
+<%= warning_text('If you are using v3 of the Cloud Foundry API, you must run cf v3-ssh instead of cf ssh') %>
 
 1. Run:
 
@@ -51,7 +57,7 @@ instances: 3/3
 usage: 64M x 3 instances
 urls: exampleapp.london.cloudapps.digital
 last uploaded: Wed Dec 21 13:56:24 UTC 2016
-stack: cflinuxfs2
+stack: cflinuxfs3
 buildpack: staticfile_buildpack
 
 .   state     since                    cpu    memory        disk         details
@@ -71,7 +77,7 @@ You can connect to a particular instance. For example, if you want to connect to
 cf ssh --app-instance-index 2
 ```
 
-## Creating TCP tunnels with SSH
+### Creating TCP tunnels with SSH
 
 You can use the [Conduit plugin](/guidance.html#conduit) to connect your local system to your remote backing service instance. If you instead want to manually create a TCP tunnel with SSH, refer to this section.
 
@@ -82,10 +88,10 @@ The `cf ssh` command supports [local port forwarding](https://en.wikipedia.org/w
 To enable local port forwarding, you can use the parameter `-L`:
 
 ```
-cf ssh APPNAME -L LOCALPORT:REMOTEHOST:REMOTEPORT
+cf ssh APPNAME -T -L LOCALPORT:REMOTEHOST:REMOTEPORT
 ```
 
-This will forward the `LOCALPORT` port on the local system to the given `REMOTEHOST` host and `REMOTEPORT` port on the application container side.  
+This will forward the `LOCALPORT` port on the local system to the given `REMOTEHOST` host and `REMOTEPORT` port on the application container side.
 
 Whenever a connection is made to this port, the connection is forwarded over the secure SSH channel, and a connection is made to the host and port `REMOTEHOST:REMOTEPORT` from the remote application container.
 
@@ -129,7 +135,7 @@ For example, you can connect directly to the PostgreSQL service bound to an appl
  2. Create a SSH tunnel using the local port 6666:
 
     ```
-    cf ssh myapp -L 6666:HOST:PORT
+    cf ssh myapp -T -L 6666:HOST:PORT
     ```
 
     where HOST and PORT are the values you found in the previous step.
